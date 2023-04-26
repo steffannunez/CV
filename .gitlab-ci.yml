@@ -5,7 +5,8 @@ stages:
 build:
   stage: build
   script:
-    -echo "Construyendo el proyecto..."
+    - npm run build
+    - echo "Construyendo el proyecto..."
 
 test:
   stage: test
