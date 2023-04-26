@@ -23,6 +23,7 @@ before_script:
   - npm install -g typescript vite
 
   # Instala las dependencias del proyecto
+  - cd .\cvweb\
   - npm install
   
 build:
