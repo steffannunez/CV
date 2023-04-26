@@ -1,14 +1,41 @@
 stages:
-  - "build"
-  - "test"
+  - build
+#  - test
+#  - deploy
 
+variables:
+  DB_NAME: "blog"
+  DB_PASS: "none"
+  # Define variables here that can be used across all jobs.
+
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - node_modules/
+
+before_script:
+  # Instala Node.js y Vue.js CLI
+  - curl -sL https://deb.nodesource.com/setup_16.x | bash -
+  - apt-get install -y nodejs
+  - npm install -g @vue/cli
+
+  # Instala TypeScript y Vite
+  - npm install -g typescript vite
+
+  # Instala las dependencias del proyecto
+  - npm install
+  
 build:
   stage: build
   script:
-    - echo "Construyendo el proyecto..."
+    - npm run build
 
-test:
-  stage: test
-  script:
-    echo "Testeando los metodos..."
-    
+#test:
+#  stage: test
+#  script:
+#    - npm run test
+
+#deploy:
+#  stage: deploy
+#  script:
+#    - npm run deploy
