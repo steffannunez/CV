@@ -11,7 +11,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="Brandon Estefan Núñez Maturana" />
 
       <nav>
-        <RouterLink to="/">Profesional</RouterLink>
+        <RouterLink to="/">Professional</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
@@ -29,7 +29,7 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 3rem 1rem 1rem;
   border-radius: 1rem;
   
 }
@@ -43,7 +43,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color:rgb(197, 127, 255);
 }
 
 nav a.router-link-exact-active:hover {
@@ -67,9 +67,7 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+
 
   header .wrapper {
     display: flex;

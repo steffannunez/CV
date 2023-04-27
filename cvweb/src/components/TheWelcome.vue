@@ -13,8 +13,8 @@ import SupportIcon from './icons/IconSupport.vue'
       <DocumentationIcon />
     </template>
     <template #heading>Education</template>
-      <p>Licenciado en Ciencias de la Ingeniería</p> 
-      <p>Titulado en Ingeniería de Ejecucion en computación e informática</p> 
+      <p>Ingeniering Science Degree</p> 
+      <p>Graduate in Computer and Informatics Execution Engineering</p> 
   </WelcomeItem>
 
   <WelcomeItem>
@@ -22,10 +22,11 @@ import SupportIcon from './icons/IconSupport.vue'
       <ToolingIcon />
     </template>
     <template #heading>Experience</template>
-      <p>full stack Developer, Tenlove Spa, 2021-2022</p>
+      <p>Back-end developer, UrbanCoop, 2020</p>
+      <p>Full stack Developer, Tenlove Spa, 2021-2022</p>
       <p>Software Developer, Talana linQ Spa, 2022 - present</p>
-      <p>FullStack Developer, proyectos personales, 2016 - presente</p>
-    <br />
+      <p>FullStack Developer, proyectos personales, 2016 - present</p>
+      
 
   </WelcomeItem>
 
@@ -48,11 +49,15 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <CommunityIcon />
     </template>
-    <template #heading>Projects</template>
+    <!-- <template #heading>Projects</template>
 
-    Pueden revisar mis proyectos en 
-    <a href="https://github.com/steffannunez/" target="_blank" rel="noopener">GitHub</a>
-    
+    You can review my projects on
+    <a class="githublink" href="https://github.com/steffannunez/" target="_blank" rel="noopener">GitHub</a>
+     -->
+     <template #heading> Hobbies</template>
+      <p>-Drawing and reading Manga</p>
+      <p>-Studying Physics and Programming</p>
+      <p>-Collecting Figures and Perfumes</p>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -60,8 +65,10 @@ import SupportIcon from './icons/IconSupport.vue'
       <SupportIcon />
     </template>
     <template #heading>Habilidades</template>
-    <p>Inglés Intermedio/Avanzado</p>
-    <p></p>
+    <p>Español (nativo)</p>
+    <p>Intermediate/Advanced English</p>
+    <p>Basic Italian</p>
+    
   </WelcomeItem>
 </template>
 <style>
@@ -73,7 +80,9 @@ a{
 }
 a:hover{
   background: transparent;
-  color: #0ec7ff;
-   
+  color: #d09effd2;
+}
+.githublink{
+  color: #8100b4;
 }
 </style>
